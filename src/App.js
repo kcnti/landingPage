@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Aos from "aos";
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { getUsername } from './functions/callSessionStorage';
 
 import { motion } from 'framer-motion';
 
@@ -29,17 +30,22 @@ function App() {
   const [ip, setIP] = useState('');
 
   useEffect(() => {
-    setTimeout(() => {
-      axios.get("https://geolocation-db.com/json/").then((response) => {
-        setIP(response.data.IPv4)
-      })
-      // console.log(res)
+    if (getUsername()) {
       setLoading(true);
+      setSuccess(true);
+    } else {
       setTimeout(() => {
-        Aos.init({ duration: 2000})
-        setSuccess(true);
-      });
-    }, 2000);
+        axios.get("https://geolocation-db.com/json/").then((response) => {
+          setIP(response.data.IPv4)
+        })
+        // console.log(res)
+        setLoading(true);
+        setTimeout(() => {
+          Aos.init({ duration: 2000})
+          setSuccess(true);
+        });
+      }, 2000);
+    }
   }, []);
 
   return(

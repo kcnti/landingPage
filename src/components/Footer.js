@@ -8,9 +8,9 @@ export default function Footer() {
             Kanti
             </a>
             <div className="social">
-                <a href="https://github.com/kcnti" rel="noreferrer" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                <a href="https://www.facebook.com/earthktnn/" rel="noreferrer" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="https://instagram.com/kcntinun" rel="noreferrer" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://github.com/kcnti" rel="noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/earthktnn/" rel="noreferrer" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/kcntinun" rel="noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </footer>
     )
