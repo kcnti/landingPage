@@ -30,6 +30,7 @@ function App() {
   const [ip, setIP] = useState('');
 
   useEffect(() => {
+    Aos.init({ duration: 2000})
     if (getUsername()) {
       setLoading(true);
       setSuccess(true);
@@ -41,7 +42,6 @@ function App() {
         // console.log(res)
         setLoading(true);
         setTimeout(() => {
-          Aos.init({ duration: 2000})
           setSuccess(true);
         });
       }, 2000);
