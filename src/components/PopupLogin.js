@@ -37,7 +37,7 @@ function PopupLogin(props) {
             username,
             password
         });
-        console.log("token "+ token)
+        // console.log("token "+ token)
         if (token.status === "Failed" || token.status === "Empty") {
             setLogFail("NO");
         } else {
