@@ -1,38 +1,130 @@
-.App {
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline:none !important;
+  box-shadow:none !important;
+}
+
+.Home {
+  /* padding: 150px; */
+  padding: 100px;
+  z-index: 10000000;
+  /* border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.219); */
+}
+
+.Home button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Portal {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Portal-grid {
+  margin-top: 50px;
+}
+
+.Portal-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Portal-item:hover {
+  /* box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.226); */
+  /* margin-left: -10px; */
+}
+
+.Portal-item button {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.Portal-item:hover button {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.226);
+  /* margin-left: -10px; */
+}
+
+.About img {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.About-content {
+  margin-top: 30px;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.About-content p {
+  margin-top: 30px;
+  /* border: 1px solid black;
+  border-radius: 5px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.typingeffect {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 50px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+
+footer {
+  /* position: absolute; */
+  left:0;
+  bottom:0;
+  right:0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social {
+  float: right;
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
 }
+
+.social i {
+  padding-left: 10px;
+  color: grey;
+}
+
+.social i:hover {
+  color: black;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+.logged-in p {
+  transition: all .3s ease-in-out;
+}
+
