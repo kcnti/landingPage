@@ -41,7 +41,7 @@ function NAVbar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <div className="me-auto"></div>
-                        <Nav style={{ padding: 15 }} className="mr-auto">
+                        <Nav style={{ padding: 5 }} className="mr-auto">
                             <Nav.Link onClick={() => toHome()} target="_blank">
                                 Home
                             </Nav.Link>
