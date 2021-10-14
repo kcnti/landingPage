@@ -33,6 +33,10 @@ button:focus {
   padding-right: 30px;
 }
 
+.Portal-container {
+  overflow-y: hidden;
+}
+
 .Portal-grid {
   margin-top: 50px;
 }

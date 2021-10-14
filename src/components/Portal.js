@@ -6,7 +6,7 @@ import portalItems from '../data/portalItems';
 export default function Portal() {
 
     return (
-        <Container id="Portal" style={{ padding: 20, marginTop: 180, marginBottom: 300 }}>
+        <Container id="Portal" className="Portal-container" style={{ padding: 20, marginTop: 180, marginBottom: 300 }}>
             <div data-aos="fade-up" className="Portal">
                 <h4>Portal</h4>
                 <div className="Portal-grid">
